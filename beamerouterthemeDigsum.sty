@@ -1,0 +1,23 @@
+\mode<presentation>
+
+% Settings
+\setbeamertemplate{navigation symbols}{}
+
+% Headline navigation
+\defbeamertemplate*{headline}{Digsum}{
+  \begin{beamercolorbox}[ht=1.2em,dp=1.6em]{section in head/foot}
+    {\usebeamerfont{headline section}\insertnavigation{\paperwidth}}
+  \end{beamercolorbox}
+}
+
+% Frame title
+\defbeamertemplate*{frametitle}{Digsum}{
+    \vspace{1cm}
+    
+    \begin{beamercolorbox}[wd=.95\paperwidth]{normal text}
+    
+    {\usebeamerfont{frame title}\hspace{0.55cm}\insertframetitle}\hfill
+  \end{beamercolorbox}
+}
+
+\mode<all>

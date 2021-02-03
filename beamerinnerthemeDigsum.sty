@@ -1,0 +1,40 @@
+\mode<presentation>
+
+% Settings
+\setbeamertemplate{itemize item}{\color{white}$\blacksquare$}
+
+
+% Title page
+\defbeamertemplate*{title page}{Digsum}{
+  \vfill\begin{beamercolorbox}{inverted text}
+
+    {\usebeamerfont{title}\inserttitle}\par
+    \setlength{\parindent}{0.4em}
+    \bigskip
+    {\usebeamerfont{subtitle}\insertsubtitle}\par\bigskip
+
+    {\bigskip\bigskip\bigskip\bigskip\bigskip}
+    {\usebeamerfont{date}\insertdate}\par\bigskip
+    {\usebeamerfont{author}\insertauthor}\par\smallskip
+    {\usebeamerfont{institute}\insertinstitute}
+  \end{beamercolorbox}
+}
+
+% Standout frame
+\providebool{Digsum@standout}
+\define@key{beamerframe}{standout}[true]{
+  \booltrue{Digsum@standout}
+  \begingroup
+  \setbeamertemplate{background}{}
+  \beamer@frametopskip=0pt plus 1fill\relax%
+  \beamer@framebottomskip=0pt plus 1.25fill\relax%
+  \color{structure.bg}
+  \large\centering
+}
+\pretocmd{\beamer@reseteecodes}{
+  \ifbool{Digsum@standout}{
+    \endgroup\boolfalse{Digsum@standout}
+  }{}
+}{}{}
+
+\mode<all>
