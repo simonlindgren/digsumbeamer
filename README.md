@@ -12,7 +12,7 @@ This is a [Beamer](https://github.com/josephwright/beamer) theme for DIGSUM (Cen
 - When this has been done once, it will be enough to only upload the `*.tex` and any new images to the same Overleaf project for future presentations.
 
 ## Slide types
-
+-. Title slide
 1. Bullets -- Slide with a header, and a number of bullet points.
 2. Centered -- Slide with centered lines of text.
 3. Image -- Slide covered by a 16:9 `*.png`-file, named (including the png extension) when running the `digsumbeamer.py` workflow. All images to be used must be in the `images` directory.
