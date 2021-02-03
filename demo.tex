@@ -1,0 +1,55 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[yyyymmdd]{datetime}
+\usetheme{Digsum}
+\usefonttheme{professionalfonts}
+
+\title{Title}
+\subtitle{Subtitle}
+\date{\today}
+\author{Author Name}
+\institute{}
+\logo{\includegraphics[height=1cm]{logo.png}}
+
+\begin{document}
+
+    
+    \begin{frame}[plain]
+    \maketitle
+    \vspace*{-1.5cm}
+    \hspace*{9cm}
+    \includegraphics[height=1.5cm]{images/logo.png}
+    \end{frame}
+
+%% Bullet point slide
+  \begin{frame}[plain]
+    \frametitle{HEADING}
+
+    \begin{itemize}
+      \item First
+      \item Second
+      \item Third
+      \item First
+      \item Second
+      \item Third
+      
+    \end{itemize}
+  \end{frame}
+
+%% Standout slide
+
+  \begin{frame}[standout, plain]
+    \Large
+    
+    This is content\par
+    This too\par
+    Also, this
+    
+    \end{frame}
+    
+    \begin{frame}[plain]
+    \makebox[\linewidth]{\includegraphics[width=\paperwidth]{images/full-image.png}}
+\end{frame}
+
+\end{document}
