@@ -19,4 +19,6 @@ This is a [Beamer](https://github.com/josephwright/beamer) theme for DIGSUM (Cen
 
 ## Demo slides
 
+Background colour can be set in `beamercolorthemeDigsum.sty`.
+
 <img src="https://github.com/simonlindgren/digsumbeamer/blob/main/demo/demoslides.png">
