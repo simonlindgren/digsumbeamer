@@ -19,4 +19,4 @@ This is a [Beamer](https://github.com/josephwright/beamer) theme for DIGSUM (Cen
 
 ## Demo slides
 
-<img src="https://github.com/simonlindgren/digsumbeamer/blob/master/demo/demoslides.png">
+<img src="https://github.com/simonlindgren/digsumbeamer/blob/main/demo/demoslides.png">
