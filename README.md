@@ -1,6 +1,6 @@
 # digsumbeamer
 
-This is a [Beamer](https://github.com/josephwright/beamer) theme for DIGSUM (Centre for Digital Social Research, Umeå University).
+This is a [Beamer](https://github.com/josephwright/beamer) theme for [DIGSUM](https://digsum.org) (Centre for Digital Social Research, Umeå University).
 
 ## Usage
 
