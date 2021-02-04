@@ -51,6 +51,7 @@ while True:
     if slidetype == "1":
         with open(projectname, "a") as presentation:
             heading = input("Heading: ")
+            presentation.write("\n")
             presentation.write("\\begin{frame}[plain]")
             presentation.write("\n")
             presentation.write("\\frametitle{"+ heading+ "}")
