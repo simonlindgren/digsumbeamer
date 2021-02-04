@@ -95,7 +95,7 @@ while True:
             presentation.write("\\begin{frame}[plain]")
             presentation.write("\n")
             imagename = input("Imagename of png in /images/ directory: (include ,png extension in name) ")
-            presentation.write("\\makebox[\linewidth]{\includegraphics[width=\paperwidth]{images/" + imagename + "}}")
+            presentation.write("\\makebox[\linewidth]{\includegraphics[height=8cm]{images/" + imagename + "}}")
             presentation.write("\n")                         
             presentation.write("\\end{frame}")
             presentation.write("\n")
