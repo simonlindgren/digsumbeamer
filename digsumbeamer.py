@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 
-with open("main.tex", "w") as presentation:
+print("\nDIGSUMBEAMER\n")
+projectname = input("Project name: (include .tex extension in name) ")
+title = input("Presentation main title: ")
+subtitle = input("Presentation subtitle: ")
+author = input("Presenter name: ")
+
+# Write basic stuff
+with open(projectname, "w") as presentation:
     presentation.write("\\documentclass[aspectratio=169]{beamer}")
     presentation.write("\n")
     presentation.write("\\usepackage[utf8]{inputenc}")
@@ -13,21 +20,12 @@ with open("main.tex", "w") as presentation:
     presentation.write("\n")
     presentation.write("\\usefonttheme{professionalfonts}")
     presentation.write("\n")
-
-print("\nDIGSUMBEAMER\n")
-title = input("Presentation main title: ")
-subtitle = input("Presentation subtitle: ")
-author = input("Presenter name: ")
-
-with open("main.tex", "a") as presentation:
     presentation.write("\\title{" + title + "}")
     presentation.write("\n")
     presentation.write("\\subtitle{" + subtitle + "}")
     presentation.write("\n")
     presentation.write("\\author{" + author + "}")
     presentation.write("\n")
-
-with open("main.tex", "a") as presentation:
     presentation.write("\\logo{\includegraphics[height=1cm]{logo.png}}")
     presentation.write("\n")
     presentation.write("\\begin{document}")
@@ -45,13 +43,13 @@ with open("main.tex", "a") as presentation:
     presentation.write("\\end{frame}")
     presentation.write("\n")
 
+# Slide creation loop
 while True:
     print("\nNew slide\n")
     slidetype = input("1 = bullets; 2 = centered; 3 = image, 0 = end: ")
-
-
+    
     if slidetype == "1":
-        with open("main.tex", "a") as presentation:
+        with open(projectname, "a") as presentation:
             heading = input("Heading: ")
             presentation.write("\\begin{frame}[plain]")
             presentation.write("\n")
@@ -74,7 +72,7 @@ while True:
             presentation.write("\\end{frame}")
                 
     if slidetype == "2":
-        with open("main.tex", "a") as presentation:
+        with open(projectname, "a") as presentation:
             presentation.write("\\begin{frame}[standout,plain]")
             presentation.write("\n")
             presentation.write("\\Large")
@@ -91,7 +89,7 @@ while True:
             presentation.write("\\end{frame}")
                 
     if slidetype == "3":
-        with open("main.tex", "a") as presentation:
+        with open(projectname, "a") as presentation:
             presentation.write("\n")
             presentation.write("\\begin{frame}[plain]")
             presentation.write("\n")
@@ -103,6 +101,7 @@ while True:
 
     if slidetype == "0":
                 break
-                
-with open("main.tex", "a") as presentation:
+
+# End
+with open(projectname, "a") as presentation:
     presentation.write("\\end{document}")
